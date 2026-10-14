@@ -1,54 +1,82 @@
 # Online Examination System
 
 ## Project Overview
-The Online Examination System is a Java-based desktop application developed using Java Swing. It allows students to log in, update their profile, attend a multiple-choice examination, and view their results.
+
+The Online Examination System is a desktop application developed using Java and Java Swing. It allows students to log in, update their profile, answer multiple-choice questions, and view their examination results.
 
 ## Objective
-To develop a simple and user-friendly examination system that manages online tests, evaluates answers, and displays results automatically.
+
+To develop a graphical examination system with timed MCQs, question navigation, automatic submission, and result calculation.
 
 ## Technologies Used
+
 - Java
 - Java Swing
+- AWT
 - Eclipse IDE
-- Object-Oriented Programming (OOP)
 
 ## Features
-- Student login
-- Profile and password update
-- Multiple-choice questions (MCQs)
-- Previous and Next question navigation
-- Examination timer
-- Automatic score calculation
-- Result summary and answer review
+
+- Student login with username and password
+- Profile update with display name and password
+- Multiple-choice questions with four options
+- Next and Previous question navigation
+- 30-minute countdown timer
+- Manual exam submission with confirmation
+- Automatic submission when the timer expires
+- Result screen showing score, time taken, and answer breakdown
+- Confirmation dialog when closing the window during an exam
 - Logout functionality
 
 ## Project Structure
-- `src/` – Java source files
-- `screenshots/` – Application screenshots
-- `README.md` – Project documentation
 
-## Demo Login
-- Username: `student`
-- Default password: `1234`
+```text
+OnlineExaminationSystem/
+├── src/
+│   ├── Main.java
+│   ├── LoginPanel.java
+│   ├── ProfilePanel.java
+│   ├── Question.java
+│   ├── ExamManager.java
+│   ├── ExamPanel.java
+│   └── ResultPanel.java
+├── screenshots/
+│   ├── login.png
+│   ├── profile.png
+│   ├── exam.png
+│   └── result.png
+└── README.md
+```
 
-The password can be changed from the profile screen.
+## Demo Login Credentials
+
+- **Username:** `student`
+- **Password:** `1234`
+
+**Note:** This project uses demonstration credentials stored in memory. Profile changes are not permanently saved.
 
 ## How to Run
-1. Open Eclipse IDE.
-2. Import or open the `OnlineExaminationSystem` Java project.
-3. Open `Main.java`.
-4. Run it as a Java Application.
-5. Log in using the demo credentials.
+
+1. Install a compatible Java Development Kit (JDK).
+2. Open Eclipse IDE.
+3. Import or open the `OnlineExaminationSystem` project.
+4. Open `Main.java` in the `src` folder.
+5. Right-click and select **Run As → Java Application**.
+6. Log in using the demo credentials.
 
 ## Screenshots
+
 Application screenshots are available in the `screenshots` folder.
 
 ## Future Enhancements
-- Store student details in a database.
-- Add an administrator dashboard.
-- Support multiple students and question sets.
+
+- Add more questions and subjects.
+- Store student accounts and results in a database.
+- Add administrator functionality to manage questions.
 - Generate downloadable result reports.
 
 ## Author
-Radharam Shrija
-(Java Development Project – Task 4)
+
+**Radharam Shrija**
+
+Java Development Project — Task 4
